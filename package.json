@@ -1,0 +1,11 @@
+{
+    "name": "grad-co-ataka",
+    "description": "Gruppe Adler Coop ATAKA",
+    "version": "0.0.1",
+    "dependencies": {
+        "grad-loadout": ">=4.5.0",
+        "grad-factions": ">0.1.1",
+        "grad-customGear": ">1.0.0",
+        "shk_pos": "github:gruppe-adler/shk_pos#master"
+    }
+}
