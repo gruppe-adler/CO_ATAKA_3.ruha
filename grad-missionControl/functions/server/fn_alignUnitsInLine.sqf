@@ -25,10 +25,9 @@ _viewDirection = _direction - 90;
 			_x setPos _linePos;
 			_x setVariable ["GRAD_setup_pos", _linePos, true];
 			_x setVariable ["GRAD_setup_dir", _viewDirection, true];
+			_x setVariable ["GRAD_setup_anim", "ACE_AmovPercMstpScapWnonDnon", true];
 			_x setDir _viewDirection;
 			_x setUnitPos "UP";
-
-			[_x, "ACE_AmovPercMstpScapWnonDnon"] remoteExec ["switchMove", 0, true];
 
 			_x disableAI "MOVE";
 			_x disableAI "WEAPONAIM";
@@ -39,14 +38,14 @@ _viewDirection = _direction - 90;
 		if (side _x isEqualTo east) then {
 			_x setUnitPos "UP";
 
-			[_x, "Acts_A_M01_briefing"] remoteExec ["switchMove", 0];
-
 			_x disableAI "MOVE";
 			_x disableAI "WEAPONAIM";
 			_x disableAI "TARGET";
 			_x disableAI "FSM";
 
-			_x setDir _viewDirection - 180;
+			_x setVariable ["GRAD_setup_pos", position _x, true];
+			_x setVariable ["GRAD_setup_anim", "Acts_A_M01_briefing", true];
+			_x setVariable ["GRAD_setup_dir", (_viewDirection - 180), true];
 		};
 	}; 
 } forEach playableUnits + switchableUnits;

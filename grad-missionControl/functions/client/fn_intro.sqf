@@ -18,8 +18,8 @@ startFogBase=30.393677;
 	private _startPosition = getPos camera_start;
 	private _endPosition = getPos camera_end;
 	
-	_startPosition set [2, 1];
-	_endPosition set [2, 1];
+	_startPosition set [2, 0.1];
+	_endPosition set [2, 1.4];
 	_camTarget = _endPosition;
 
 	_camera = "camera" camCreate _startPosition;
@@ -37,8 +37,8 @@ startFogBase=30.393677;
 	_camera camCommit 3;
 	sleep 3;
 	_camera camSetPos [getPos player select 0, getPos player select 1, 1.7];
-	_camera camCommit 9;
-	sleep 8;
+	_camera camCommit 5;
+	sleep 4;
 	cutText ["", "BLACK OUT", 1];
 	sleep 1;
 	_filmgrain ppEffectEnable false;   
