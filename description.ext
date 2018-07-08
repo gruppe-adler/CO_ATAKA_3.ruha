@@ -50,6 +50,7 @@ class CfgLeaflets
   {
     text = "RUSSIAN HORROR - large bear"; // Text shown when previewing the leaflet full-screen. Ideally should be localized, so even player who cannot read the image can get the information
     texture = "pic\propaganda2.jpg"; // Leaflet texture shown when previewing the leaflet full-screen
+    model = "\grad_leaflets\leaflet.p3d";
   }
 };
 

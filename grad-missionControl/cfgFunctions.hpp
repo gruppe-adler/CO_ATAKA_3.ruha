@@ -17,5 +17,6 @@ class grad_missionControl {
       class alignUnitsInLine;
       class checkRetreat {postInit = 1;};
       class endMission;
+      class refuelUAV {postInit = 1;};
   };
 };
