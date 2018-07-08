@@ -63,12 +63,12 @@ private _civilianMob2 = [
 
 private _reinforcements = [
 	[_m2a2, getPos reinf_1, getDir reinf_1, _AT_team, false],
-	[_hmmwv, getPos reinf_2, getDir reinf_2, _MG_team, false],
+	[_m2a2, getPos reinf_2, getDir reinf_2, _MG_team, false],
 	[_hmmwv, getPos reinf_3, getDir reinf_3, _AT_team, false],
 	[_hmmwv, getPos reinf_4, getDir reinf_4, _MG_team, false],
 	[_m1a1, getPos reinf_5, getDir reinf_5, [], false],
-	[_ikarus, getPos reinf_6, getDir reinf_6, _civilianMob, true],
-	[_gaz24, getPos reinf_7, getDir reinf_7, _civilianMob2, true]
+	[_m1a1, getPos reinf_6, getDir reinf_6, [], false],
+	[_m1a1, getPos reinf_7, getDir reinf_7, [], false]
 ];
 
 

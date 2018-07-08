@@ -33,4 +33,4 @@ private _dir = player getVariable ["GRAD_setup_dir", 0];
 player setPos _pos; 
 player setDir _dir;
 
-// [] spawn GRAD_missionControl_fnc_intro;
+[] spawn GRAD_missionControl_fnc_intro;

@@ -111,7 +111,7 @@ _introPic ctrlCommit 3;
 sleep 11;
 
 
-[ "Nachts", format ["26.07.1987"]] spawn BIS_fnc_infoText;
+[ "Morgens", format ["29.07.1987"]] spawn BIS_fnc_infoText;
 
 sleep 10;
 
